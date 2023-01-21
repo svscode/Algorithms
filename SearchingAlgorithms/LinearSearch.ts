@@ -1,4 +1,4 @@
-const linearSearch = (numbersArray: number[], totalElements: number, item: number) => {
+const linearSearch = (numbersArray: number[], totalElements: number, item: number): number => {
     for(let i = 0; i< totalElements; i++){
         if(numbersArray[i] === item){
             return i;

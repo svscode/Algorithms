@@ -1,4 +1,4 @@
-const linearRecursiveSearch = (numbersArray: number[], totalElements: number, item: number) => {
+const linearRecursiveSearch = (numbersArray: number[], totalElements: number, item: number): number => {
     if(totalElements === 0){
         return -1;
     }else if(numbersArray[totalElements - 1] === item){
@@ -18,3 +18,5 @@ if(result === -1){
 }else{
     console.log("Element found at the index", result);
 }
+
+export {};
