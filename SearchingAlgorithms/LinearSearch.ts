@@ -16,3 +16,5 @@ if(result === -1){
 }else{
     console.log("Element found at the index", result);
 }
+
+export {};
