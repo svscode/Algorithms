@@ -1,6 +1,6 @@
 const binaryRecursiveSearch = (numbersArray: number[], min: number, max: number, item: number): number => {
     if(max >= min){
-        const midpoint = (min + max) / 2;
+        const midpoint = min + Math.floor((max - min) / 2);
         // Check if the element is at the midpoint
         if(numbersArray[midpoint] === item){
             return midpoint;
@@ -16,16 +16,13 @@ const binaryRecursiveSearch = (numbersArray: number[], min: number, max: number,
     }
     return -1;
 };
-
 const numbersArray = [1000, 2500, 3900, 4000, 5000];
 const item = 3900;
 const totalElements = numbersArray.length;
-const result = binaryRecursiveSearch(numbersArray, 0, totalElements - 1,     item);
-
+const result = binaryRecursiveSearch(numbersArray, 0, totalElements - 1, item);
 if(result === -1){
     console.log("Element not found");
 }else{
     console.log("Element found at the index", result);
 }
-
 export default {};

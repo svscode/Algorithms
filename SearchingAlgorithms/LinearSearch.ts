@@ -6,7 +6,6 @@ const linearSearch = (numbersArray: number[], totalElements: number, item: numbe
     }
     return -1;
 }
-
 const numbersArray = [40, 30, 10, 20, 50];
 const item = 10;
 const totalElements = numbersArray.length;
@@ -16,5 +15,4 @@ if(result === -1){
 }else{
     console.log("Element found at the index", result);
 }
-
 export {};

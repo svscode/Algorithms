@@ -8,7 +8,6 @@ const linearRecursiveSearch = (numbersArray: number[], totalElements: number, it
         return result;
     }
 }
-
 const numbersArray = [40, 30, 10, 20, 50];
 const item = 10;
 const totalElements = numbersArray.length;
@@ -18,5 +17,4 @@ if(result === -1){
 }else{
     console.log("Element found at the index", result);
 }
-
 export {};
